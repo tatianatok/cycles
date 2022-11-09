@@ -187,10 +187,11 @@ public class Main {
 //В нашем месяце 31 день. В результате у вас должно вывестись от 4 до 5 сообщений с напоминаниями
 // по разным датам.
 
-        int friday=3;
+        int firstFriday=3;
+        int friday=0;
         while (friday<=31) {
             friday++;
-            if (friday % 7 == 0)
+            if (friday % 7 == firstFriday)
                 System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
                     }
         System.out.println(" ");
